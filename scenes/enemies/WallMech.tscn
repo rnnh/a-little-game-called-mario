@@ -91,8 +91,8 @@ tracks/0/keys = {
 }
 
 [node name="WallMech" type="KinematicBody2D" groups=["enemy"]]
-collision_layer = 8
-collision_mask = 3
+collision_layer = 0
+collision_mask = 322
 script = ExtResource( 3 )
 bullet_scene = ExtResource( 2 )
 muzzle_flash_scene = ExtResource( 4 )
@@ -107,10 +107,10 @@ shape = SubResource( 1 )
 [node name="Muzzles" type="Node2D" parent="."]
 
 [node name="0" type="Position2D" parent="Muzzles"]
-position = Vector2( -18, -32 )
+position = Vector2( 0, -32 )
 
 [node name="1" type="Position2D" parent="Muzzles"]
-position = Vector2( -18, 32 )
+position = Vector2( 0, 32 )
 
 [node name="ShootTimer" type="Timer" parent="."]
 wait_time = 3.0

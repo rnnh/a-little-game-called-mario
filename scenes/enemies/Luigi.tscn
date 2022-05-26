@@ -278,8 +278,8 @@ scale_curve = SubResource( 17 )
 color_ramp = SubResource( 14 )
 
 [node name="Luigi" type="KinematicBody2D" groups=["enemy"]]
-collision_layer = 8
-collision_mask = 2
+collision_layer = 0
+collision_mask = 66
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -339,7 +339,6 @@ report_to_node = NodePath("..")
 cone_color = Color( 1, 0, 0, 1 )
 
 [node name="DeathZone" type="Particles2D" parent="."]
-emitting = false
 amount = 24
 process_material = SubResource( 15 )
 
